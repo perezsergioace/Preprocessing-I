@@ -147,7 +147,8 @@ header nav {
 header a {
   font-size: 2rem;
   text-decoration: none;
-  width: 10%;
+  width: 30%;
+  text-align: center;
 }
 .top-content {
   font-size: 2rem;
@@ -181,7 +182,8 @@ header a {
   justify-content: center;
 }
 .top-content .contact-content .information-text li {
-  width: 40%;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 .top-content button {
   font-size: 2rem;
@@ -204,6 +206,12 @@ header a {
 .skills-content .skills-text {
   padding: 0 40px;
 }
+.skills-content li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1em;
+}
 .experience-content {
   margin-bottom: 80px;
   font-size: 2rem;
@@ -218,6 +226,12 @@ header a {
 }
 .experience-content .experienceText {
   padding: 0 40px;
+}
+.experience-content li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1em;
 }
 .experience-content h4 {
   font-style: italic;
@@ -240,6 +254,12 @@ header a {
 .education-content .educationText {
   padding: 0 40px;
 }
+.education-content li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1em;
+}
 .awardsAndHonors {
   margin-bottom: 80px;
   font-size: 2rem;
@@ -258,7 +278,35 @@ header a {
 .awardsAndHonors .awardsText {
   padding: 0 40px;
 }
+.awardsAndHonors li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1em;
+}
 hr {
   border: 0.2rem dashed black;
   height: 0px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    border-bottom: 1px solid black;
+    word-wrap: break-word;
+    padding: 20px;
+  }
+  .information-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .information-text li {
+    width: 20px;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+  }
 }

@@ -157,7 +157,8 @@ header {
 	a {
 		font-size: 2rem;
 		text-decoration: none;
-		width: 10%;
+		width: 30%;
+		text-align: center;
 	} //this closes the anchors in the nav
 } //this closes the header
 
@@ -192,7 +193,8 @@ header {
 			display: flex;
 			justify-content: center;
 			li {
-				width: 40%;
+				width: 100%;
+				overflow-wrap: break-word;
 			}
 		}
 	}
@@ -218,6 +220,12 @@ header {
 	.skills-text {
 		padding: 0 40px;
 	} //closes the skills-text
+	li {
+		list-style-type: disc;
+		list-style-position: inside;
+		text-indent: -1.5em;
+		padding-left: 1em;
+	}
 } //closes the skills-content section
 
 .experience-content {
@@ -233,6 +241,12 @@ header {
 	.experienceText {
 		padding: 0 40px;
 	} //this closes the expereinceText
+	li {
+		list-style-type: disc;
+		list-style-position: inside;
+		text-indent: -1.5em;
+		padding-left: 1em;
+	}
 	h4 {
 		font-style: italic;
 	} //this closes the h4 tags
@@ -254,6 +268,12 @@ header {
 	.educationText {
 		padding: 0 40px;
 	} //this closes the educationText
+	li {
+		list-style-type: disc;
+		list-style-position: inside;
+		text-indent: -1.5em;
+		padding-left: 1em;
+	}
 } //this closes the education-content section
 
 .awardsAndHonors {
@@ -272,6 +292,12 @@ header {
 	.awardsText {
 		padding: 0 40px;
 	} //this closes the awardsText
+	li {
+		list-style-type: disc;
+		list-style-position: inside;
+		text-indent: -1.5em;
+		padding-left: 1em;
+	}
 } //this closes the awardsAndHonors section
 
 // -----mixins-----
@@ -289,3 +315,27 @@ hr {
 	font-weight: bold;
 }
 // ------
+
+@media (max-width: 500px) {
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	a {
+		// border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		word-wrap: break-word;
+		padding: 20px;
+	}
+	.information-text {
+		display: flex;
+		flex-direction: column;
+	}
+	.information-text li {
+		width: 20px;
+		align-items: center;
+		text-align: center;
+		list-style: none;
+	}
+}
