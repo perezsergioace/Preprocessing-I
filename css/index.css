@@ -129,11 +129,136 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
+  line-height: 2;
+  font-size: 62.5%;
+  font-family: 'Nunito', sans-serif;
 }
-html {
-  background-color: red;
+/* --------------------------------*/
+header nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+header a {
+  font-size: 2rem;
+  text-decoration: none;
+  width: 10%;
+}
+.top-content {
+  font-size: 2rem;
+  padding: 40px;
+}
+.top-content .myPicture {
+  display: flex;
+  justify-content: center;
+}
+.top-content h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.top-content h3 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.top-content .contact-content {
+  padding: 0 40px;
+}
+.top-content .contact-content h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.top-content .contact-content .information-text {
+  display: flex;
+  justify-content: center;
+}
+.top-content .contact-content .information-text li {
+  width: 40%;
+}
+.top-content button {
+  font-size: 2rem;
+  border-radius: 10px;
+}
+.top-content .button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.skills-content {
+  margin-bottom: 80px;
+  font-size: 2rem;
+  padding: 0 40px;
+}
+.skills-content h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.skills-content .skills-text {
+  padding: 0 40px;
+}
+.experience-content {
+  margin-bottom: 80px;
+  font-size: 2rem;
+  padding: 0 40px;
+}
+.experience-content h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.experience-content h3 {
+  font-weight: bold;
+}
+.experience-content .experienceText {
+  padding: 0 40px;
+}
+.experience-content h4 {
+  font-style: italic;
+}
+.education-content {
+  margin-bottom: 80px;
+  font-size: 2rem;
+  padding: 0 40px;
+}
+.education-content h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.education-content h3 {
+  font-weight: bold;
+}
+.education-content h4 {
+  font-style: italic;
+}
+.education-content .educationText {
+  padding: 0 40px;
+}
+.awardsAndHonors {
+  margin-bottom: 80px;
+  font-size: 2rem;
+  padding: 0 40px;
+}
+.awardsAndHonors h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.awardsAndHonors h3 {
+  font-weight: bold;
+}
+.awardsAndHonors h4 {
+  font-style: italic;
+}
+.awardsAndHonors .awardsText {
+  padding: 0 40px;
+}
+hr {
+  border: 0.2rem dashed black;
+  height: 0px;
 }
