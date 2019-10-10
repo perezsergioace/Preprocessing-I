@@ -146,15 +146,20 @@ body {
 /* --------------------------------*/
 @new-font: 'Nunito', sans-serif;
 
+body {
+	background-color: rgb(248, 252, 255);
+}
+
 header {
 	// padding: 0 40px;
 	nav {
-		margin-top: 2rem;
+		// margin-top: 2rem;
 		display: flex;
 		justify-content: flex-end;
 		// background-color: blue;
 	} //this closes the nav inside the header
 	a {
+		color: rgb(36, 36, 36);
 		font-size: 2rem;
 		text-decoration: none;
 		width: 30%;
@@ -183,40 +188,36 @@ header {
 		justify-content: center;
 	} //this closes the h3
 	.contact-content {
-		padding: 0 40px;
+		padding: 0 30px;
 		h2 {
-			display: flex;
-			justify-content: center;
 			.titles-font-size();
 		}
 		.information-text {
-			display: flex;
-			justify-content: center;
 			li {
 				width: 100%;
 				overflow-wrap: break-word;
+				list-style: square;
 			}
 		}
 	}
 	button {
 		font-size: 2rem;
-		border-radius: 10px;
+		border-radius: 5px;
 	}
 	.button {
-		display: flex;
-		justify-content: center;
+		padding: 0 60px;
 		margin: 20px 0;
 	}
 } //closes the top-content section
 
 .skills-content {
 	margin-bottom: 80px;
+	font-size: 2rem;
+	padding: 0 40px;
 	h2 {
 		font-weight: bold;
 		.titles-font-size();
 	} //this closes the h2
-	font-size: 2rem;
-	padding: 0 40px;
 	.skills-text {
 		padding: 0 40px;
 	} //closes the skills-text
@@ -225,6 +226,7 @@ header {
 		list-style-position: inside;
 		text-indent: -1.5em;
 		padding-left: 1em;
+		list-style-type: square;
 	}
 } //closes the skills-content section
 
@@ -234,6 +236,18 @@ header {
 	padding: 0 40px;
 	h2 {
 		.titles-font-size();
+	}
+	.cvsHealthInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+	.startdateInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+	.quadGraphicsInfo {
+		display: flex;
+		justify-content: space-between;
 	}
 	h3 {
 		font-weight: bold;
@@ -246,6 +260,7 @@ header {
 		list-style-position: inside;
 		text-indent: -1.5em;
 		padding-left: 1em;
+		list-style-type: square;
 	}
 	h4 {
 		font-style: italic;
@@ -256,6 +271,18 @@ header {
 	margin-bottom: 80px;
 	font-size: 2rem;
 	padding: 0 40px;
+	.yearUpInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+	.rhodeIslandCollegeInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+	.startdateInfo {
+		display: flex;
+		justify-content: space-between;
+	}
 	h2 {
 		.titles-font-size();
 	}
@@ -273,6 +300,7 @@ header {
 		list-style-position: inside;
 		text-indent: -1.5em;
 		padding-left: 1em;
+		list-style: square;
 	}
 } //this closes the education-content section
 
@@ -282,6 +310,14 @@ header {
 	padding: 0 40px;
 	h2 {
 		.titles-font-size();
+	}
+	.yearupAwardsInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+	.startdateInfo {
+		display: flex;
+		justify-content: space-between;
 	}
 	h3 {
 		font-weight: bold;
@@ -297,6 +333,7 @@ header {
 		list-style-position: inside;
 		text-indent: -1.5em;
 		padding-left: 1em;
+		list-style: square;
 	}
 } //this closes the awardsAndHonors section
 
@@ -334,8 +371,5 @@ hr {
 	}
 	.information-text li {
 		width: 20px;
-		align-items: center;
-		text-align: center;
-		list-style: none;
 	}
 }

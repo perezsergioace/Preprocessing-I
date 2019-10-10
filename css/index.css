@@ -139,12 +139,15 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 /* --------------------------------*/
+body {
+  background-color: #f8fcff;
+}
 header nav {
-  margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
 }
 header a {
+  color: #242424;
   font-size: 2rem;
   text-decoration: none;
   width: 30%;
@@ -169,29 +172,23 @@ header a {
   justify-content: center;
 }
 .top-content .contact-content {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 .top-content .contact-content h2 {
-  display: flex;
-  justify-content: center;
   font-size: 4rem;
   font-weight: bold;
-}
-.top-content .contact-content .information-text {
-  display: flex;
-  justify-content: center;
 }
 .top-content .contact-content .information-text li {
   width: 100%;
   overflow-wrap: break-word;
+  list-style: square;
 }
 .top-content button {
   font-size: 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .top-content .button {
-  display: flex;
-  justify-content: center;
+  padding: 0 60px;
   margin: 20px 0;
 }
 .skills-content {
@@ -211,6 +208,7 @@ header a {
   list-style-position: inside;
   text-indent: -1.5em;
   padding-left: 1em;
+  list-style-type: square;
 }
 .experience-content {
   margin-bottom: 80px;
@@ -220,6 +218,18 @@ header a {
 .experience-content h2 {
   font-size: 4rem;
   font-weight: bold;
+}
+.experience-content .cvsHealthInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.experience-content .startdateInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.experience-content .quadGraphicsInfo {
+  display: flex;
+  justify-content: space-between;
 }
 .experience-content h3 {
   font-weight: bold;
@@ -232,6 +242,7 @@ header a {
   list-style-position: inside;
   text-indent: -1.5em;
   padding-left: 1em;
+  list-style-type: square;
 }
 .experience-content h4 {
   font-style: italic;
@@ -240,6 +251,18 @@ header a {
   margin-bottom: 80px;
   font-size: 2rem;
   padding: 0 40px;
+}
+.education-content .yearUpInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.education-content .rhodeIslandCollegeInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.education-content .startdateInfo {
+  display: flex;
+  justify-content: space-between;
 }
 .education-content h2 {
   font-size: 4rem;
@@ -259,6 +282,7 @@ header a {
   list-style-position: inside;
   text-indent: -1.5em;
   padding-left: 1em;
+  list-style: square;
 }
 .awardsAndHonors {
   margin-bottom: 80px;
@@ -268,6 +292,14 @@ header a {
 .awardsAndHonors h2 {
   font-size: 4rem;
   font-weight: bold;
+}
+.awardsAndHonors .yearupAwardsInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.awardsAndHonors .startdateInfo {
+  display: flex;
+  justify-content: space-between;
 }
 .awardsAndHonors h3 {
   font-weight: bold;
@@ -283,6 +315,7 @@ header a {
   list-style-position: inside;
   text-indent: -1.5em;
   padding-left: 1em;
+  list-style: square;
 }
 hr {
   border: 0.2rem dashed black;
@@ -305,8 +338,5 @@ hr {
   }
   .information-text li {
     width: 20px;
-    align-items: center;
-    text-align: center;
-    list-style: none;
   }
 }
